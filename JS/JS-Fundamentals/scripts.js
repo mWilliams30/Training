@@ -36,5 +36,28 @@ var cow = AnimalCreator("Mark", "Lion", "Code to  hell and back", ["zzzzzz", "Oh
 var sheep = AnimalCreator("Jo", "Fish", "Clean Up", ["Im Tired", "Im Horney"])
 var dog = AnimalCreator("Emilio", "Dinosaur", "Dadaaaa", ["No No No", "Bear Bear"])
 
+addFriend(cow, sheep);
+addFriend(cow, dog);
+addFriend(sheep, dog);
+addFriend(sheep, cow);
+addFriend(dog, cow);
+addFriend(dog, sheep);
+
+
+
 var myFarm = [];
 myFarm.push(cow, sheep, dog)
+
+var addMacthesArray = function(farm){
+	for(var i = 0; i < farm.length; i++)
+	{
+		farm[i].matches = [];
+	}
+}
+
+var giveMatches = function(farm){
+	for(var i = 0; i < farm.length; i++)
+	{
+		farm[i].matches.push(farm[i].freinds[i]);
+	}
+}
