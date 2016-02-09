@@ -172,7 +172,7 @@
         expect(window.retainedInnerFn).to.be.a('function');
         // even though the outerFn has returned once the only call to it was completed a couple of lines above, the inner function remains available in the global scope, and still has access to the variables of that containing scope where it was first created.
         window.retainedInnerFn();
-        expect(ACTUAL === null).to.be.true;
+        expect(ACTUAL === 13).to.be.true;
       });
 
   });
