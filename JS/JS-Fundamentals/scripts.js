@@ -64,6 +64,7 @@ var giveMatches = function(farm){
 }*/
 
 //closure
+/*
 var nonsense = function(string){
 	var blab = function(){
 	  alert(string);
@@ -108,9 +109,17 @@ farmLoveStory.addWords('It saw a friendly face.'); //'There was once a lonely co
 //storyOfMyLife.erase(); // ''
 
 
+*/
+
+//underscore
 
 
 
+var arr = [28, 49, 6];
+
+_.each(arr, function(){
+	console.log(arr);
+});
 
 
 
