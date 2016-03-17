@@ -135,3 +135,21 @@ callbackDemo(helloTrue, helloFalse, false, "Hello.World");
 //async
 
 //Prototypes
+
+var User = function(firstName, lastName){
+	this.username = firstName + "." + lastName;
+}
+
+User.prototype.whoAmI = function() {
+	return "Im " + this.username;
+};
+
+
+var me = new User("mark", "williams");
+var wife = new User("jo", "williams");
+
+wife.sayHi = function(){
+	console.log("Hi there " + this.whoAmI());
+};
+
+
