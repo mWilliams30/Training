@@ -112,6 +112,26 @@ portalUsers.addUser("mark","williams", "Hello portal World");
 
 /////////////////////////////////////////////////
 // Callbacks
-//var callbackDemo = function()
+var callbackDemo = function(funcTrue, funcFalse, condition, statment)
+{
+	if(statment)
+		console.log(statment);
+	setTimeout(function(){
+		if(condition)
+			funcTrue()
+		else
+			funcFalse()
+	},1000);	
+}
+var helloTrue = function(){
+	console.log("Hello True");
+};
+var helloFalse = function(){
+	console.log("Hello False");
+};
+
+callbackDemo(helloTrue, helloFalse, false, "Hello.World");
 
 //async
+
+//Prototypes
